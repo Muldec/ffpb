@@ -114,7 +114,7 @@ class ProgressNotifier(object):
         return None
 
     def get_source(self, line):
-        return "Current file"
+        return "Progress"
 
     def progress(self, line):
         search = self._PROGRESS_RX.search(line)
