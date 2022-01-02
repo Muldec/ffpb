@@ -138,7 +138,7 @@ class ProgressNotifier(object):
                     dynamic_ncols=True,
                     unit=unit,
                     ncols=0,
-                    ascii=os.name=="nt",  # windows cmd has problems with unicode
+                    ascii=false,  # try unicode in powershell terminal
                 )
 
             self.pbar.update(current - self.pbar.n)
